@@ -24,4 +24,12 @@ function distributeCard(element){
     }
 }
 
+function discover(){
+    this.classList.add('discovered');
+}
+
 distributeCard(totalCard);
+
+document.querySelectorAll('.card').forEach((element) => {
+    element.addEventListener('click', discover);
+})
