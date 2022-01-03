@@ -59,3 +59,7 @@ main {
 .card.discovered {
   transform: rotateY(-180deg);
 }
+
+.hits{
+  opacity: 0;
+}
