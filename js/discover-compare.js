@@ -18,8 +18,8 @@ function discover() {
 }
 function comparison(cardsToCompare) {
   if (cardsToCompare[0].dataset.value === cardsToCompare[1].dataset.value) {
-    hits(cardsToCompare);
+    success(cardsToCompare);
   } else {
-    errors(cardsToCompare);
+    error(cardsToCompare);
   }
 }

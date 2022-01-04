@@ -1,12 +1,18 @@
-function hits(cards){
+function success(cards){
     cards.forEach((element) => {
-        element.classList.add('hits')            
+        element.classList.add("hits");
     })    
 }
 
-function errors(cards){
+function error(cards){
     cards.forEach((element) => {
-        element.classList.remove('discovered')        
+        element.classList.add("error");       
     })
+    
+    setTimeout(() => {
+        cards.forEach((element) => {
+            element.classList.remove("discovered");
+            element.classList.remove("error");
+        });
+    }, 1000);   
 }
-
